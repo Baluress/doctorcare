@@ -57,7 +57,7 @@ function activateMenuAtCurrentSection(section) {
 
 
 function showNavOnScroll() {
-  const navigation = document.getElementById('navigation')
+  const navigation = document.getElementById('navigation');
   if(scrollY > 0) {
     navigation.classList.add('scroll');
     } else {
@@ -66,6 +66,7 @@ function showNavOnScroll() {
 }
 
 function showBackToTopButtonOnScroll(){
+   const backToTopButton = document.getElementById('backToTopButton');
   if(scrollY > 550) {
     backToTopButton.classList.add('show');
     } else {
